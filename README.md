@@ -18,3 +18,7 @@ but you need to go beyond that.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
+
+## Answer
+
+This algorithm consists of a while loop with $n$ complexity that carries out operations of constant time to find the summation approximation of $e$. Therefore, the worst-case time complexity of the entire algorithm is $\Theta(n)$. This algorithm does less work than the previous because there is no repetition of work in finding the factorial denominator terms. Instead of calculating factorial(i) for all $i\in [1,n]$, which entails plenty of repetitive calculations, we start with a denominator of 1 and build it up from there; we only calculate factorial(n) once.
