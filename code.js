@@ -1,9 +1,11 @@
-function factorial(n) {
-    if(n === 0) return 1;
-    else return n * factorial(n - 1);
-}
-
 function e(n) {
-    if(n === 0) return 1;
-    else return 1.0 / factorial(n) + e(n - 1);
+    let sum = 1;
+    let i = 1;
+    let currentFact = 1;
+    while (i <= n) {
+        currentFact *= i;
+        sum += 1 / currentFact;
+        i++;
+    }
+    return sum;
 }
